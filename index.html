@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | my resume</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>رزومه</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -12,7 +11,7 @@
     <div id="unity-container">
       <canvas id="unity-canvas" width=1000 height=600></canvas>
       <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
+        <div style="display: none;" id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
@@ -57,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/game.loader.js";
+      var loaderUrl = buildUrl + "/test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/game.data.unityweb",
-        frameworkUrl: buildUrl + "/game.framework.js.unityweb",
-        codeUrl: buildUrl + "/game.wasm.unityweb",
+        dataUrl: buildUrl + "/test.data.unityweb",
+        frameworkUrl: buildUrl + "/test.framework.js.unityweb",
+        codeUrl: buildUrl + "/test.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "My",
-        productName: "my resume",
+        companyName: "DefaultCompany",
+        productName: "New Unity Project (2)",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
